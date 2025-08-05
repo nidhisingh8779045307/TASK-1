@@ -57,10 +57,11 @@ ul li a{
    background: moccasin;
    text-align: center;
    padding: 10rem;
+   scroll-margin-top: 80px; 
  }
  
  .hero{
-   padding: 6rem;
+   padding: 12rem;
  }
  
  h1, h2, h3{
@@ -109,7 +110,7 @@ ul li a{
  
  .workouts, .services{
    min-height: 20vh;
-   padding: 3rem;
+   padding: 7rem;
    
  }
  
@@ -140,11 +141,12 @@ ul li a{
  }
  
  .contact{
+  padding-bottom: none;
    margin-bottom: none;
  }
  
  .about, .contact{
-   padding: 3rem;
+   padding: 5rem;
  }
  
  .about h2{
@@ -157,7 +159,7 @@ ul li a{
    margin-top: 1.5rem;
    font-weight: 400;
    color: black;
-   text-shadow: 0 1px grey;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
  }
  
  form {
@@ -177,7 +179,7 @@ ul li a{
  
  
  footer{
-   padding: 2rem;
+  padding: 0.8rem;
    justify-items: center;
    color: #fff;
    background: linear-gradient(to left, darksalmon, darkorange, orangered);
@@ -198,6 +200,17 @@ ul li a{
  .share-links a:hover{
    color: blueviolet;
  }
+
+ @media (max-width: 1024px) {
+  h1{
+    font-size: 3rem;
+    margin-bottom: 4px;
+  }
+
+  section{
+    min-height: 20vh;
+  }
+ }
  
 
 @media (max-width: 800px) {
@@ -211,12 +224,13 @@ ul li a{
   }
   
   .hero{
-    padding-top: 6rem;
+    justify-self: center;
+    padding-top: 15rem;
   }
   
   section{
     padding: 5rem;
-    min-height: 50vh;
+    min-height: 40vh;
     scroll-margin-top: 80px; 
   }
   
@@ -253,5 +267,29 @@ ul li a{
   
   .about p{
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 0.8rem;
+  }
+  .hero{
+    padding: 3rem;
+  }
+  .hero h1{
+    font-size: 2rem;
+  }
+
+  section{
+    padding: 4rem;
+  }
+
+  .about p{
+    padding: 0rem;
+  }
+
+  .services, .workouts, .contact{
+    padding: 2rem;
   }
 }
